@@ -1,8 +1,9 @@
-import styles from './styles.module.scss';
 import { toast } from 'react-hot-toast';
 
 import { FaGoogle } from 'react-icons/fa';
 import { FiX } from 'react-icons/fi'
+
+import styles from './styles.module.scss';
 
 export function SignInButton() {
   const isButtonLogged = false;

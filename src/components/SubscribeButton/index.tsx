@@ -1,17 +1,18 @@
 import toast from 'react-hot-toast';
+
 import styles from './styles.module.scss';
 
-export function SubscribeButton() {
+interface SubscribeButtonProps {
+  onOpenNewSubscribeButton: () => void;
+}
 
-  function handleSubscribeButton() {
-    toast.error("hummm it seems that this feature is not available yet 😢")
-  }
+export function SubscribeButton({ onOpenNewSubscribeButton }) {
 
   return (
     <button
       type="button"
       className={styles.subscribeButton}
-      onClick={handleSubscribeButton}
+      onClick={onOpenNewSubscribeButton}
     >
       Subscribe now
     </button>

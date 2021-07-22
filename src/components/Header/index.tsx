@@ -1,9 +1,9 @@
 import { useState } from 'react';
-import { SignInButton } from '../SignInButton';
-import styles from './styles.module.scss';
 
-import { FaBars } from 'react-icons/fa';
-import { FaTimes } from 'react-icons/fa';
+import { SignInButton } from '../SignInButton';
+import { FaBars, FaTimes } from 'react-icons/fa';
+
+import styles from './styles.module.scss';
 
 export function Header() {
   const [isOpenMenu, setIsOpenMenu] = useState(false);

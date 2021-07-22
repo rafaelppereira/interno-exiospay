@@ -1,4 +1,5 @@
 import { AppProps } from 'next/app';
+
 import { Toaster } from 'react-hot-toast';
 import { Header } from '../components/Header';
 
