@@ -1,9 +1,17 @@
 import Head from 'next/head';
 import { SubscribeButton } from '../components/SubscribeButton';
 
+import { GetStaticProps } from 'next';
+
 import styles from './home.module.scss';
 
-export default function Home() {
+interface HomeProps {
+  product: {
+    amount: number;
+  }
+}
+
+export default function Home({ product }: HomeProps) {
   return (
     <>
       <Head>
@@ -15,7 +23,7 @@ export default function Home() {
           <h1>The easiest way <br /> to manage <span>personal</span> <br /> finances pro.</h1>
           <p>
             Get acess to all the functions <br />
-            <span>for $29,90 month</span>
+            <span>for {product.amount} month</span>
           </p>
           <SubscribeButton />
         </section>
@@ -34,4 +42,23 @@ export default function Home() {
       </footer>
     </>
   )
+}
+
+export const getStaticProps: GetStaticProps = async () => {
+
+  const value = 2990
+
+  const product = {
+    amount: new Intl.NumberFormat('en-US', {
+      style: 'currency',
+      currency: 'USD'
+    }).format(value / 100),
+  }
+  
+  return {
+    props: {
+      product
+    },
+    revalidate: 60 * 60 * 24
+  }
 }
