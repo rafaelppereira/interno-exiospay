@@ -24,7 +24,7 @@ export function NewSubscribeModal({ isOpen, onRequestClose }: NewSubscribeModalP
       className={styles.reactModalContent}
     >
       <h2>Custom your own <br /> <span>card number</span></h2>
-      <img src="./card.svg" alt="exiospay" />
+      <img src="/card.svg" alt="exioscard" />
       <div className={styles.infoContent}>
         <div className={styles.infocard}>
           <div>
