@@ -1,8 +1,14 @@
-# Welcome to exiospay
+<h1 align="center">Exiospay</h1>
 
-hello dev my name is Rafael this is my next.js project where I will bring new features over time 💚
+<p align="center">🤑 This is a future project that I want to make an interconnected payment method with several features</p>
 
-to start the project just use the:
-- yarn dev
+<p align="center">To start the project just run the commands below</p>
+
+<p display="flex" align="center">
+  yarn 
+  yarn start
+</p>
+
+<br/>
 
 ![print](https://user-images.githubusercontent.com/68617133/126603544-c6880440-03b6-452c-a271-2caa88a6bb40.png)
